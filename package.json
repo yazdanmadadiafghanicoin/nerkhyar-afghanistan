@@ -1,0 +1,13 @@
+
+{
+  "name": "nerkhyar-afghanistan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Afghanistan Live Market Rates Platform",
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}
