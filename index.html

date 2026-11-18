@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b27">
+  <meta name="description" content="نرخ‌یار افغانستان؛ نرخ ارز، طلا و قیمت بازارهای افغانستان">
+  <title>نرخ‌یار افغانستان</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#f3f6f5;color:#172b28;font-family:Tahoma,Arial,sans-serif}
+    header{background:#102b27;color:white;padding:22px 16px;border-bottom:4px solid #d4ad54}
+    .wrap{max-width:900px;margin:auto}
+    .brand{font-size:25px;font-weight:bold}
+    .sub{font-size:12px;color:#d5dfdb;margin-top:7px}
+    .hero{padding:23px 16px}
+    .hero h2{margin:0 0 10px;font-size:21px}
+    .muted{color:#70817c;font-size:13px;line-height:1.9}
+    .tools{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}
+    select,input,button{font:inherit;padding:12px;border:1px solid #dce4e0;border-radius:10px;background:white}
+    .tools select{flex:1;min-width:130px}
+    .section-title{font-size:17px;margin:20px 0 12px}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .card{background:white;border:1px solid #e1e9e5;border-radius:14px;padding:16px}
+    .name{font-size:14px;color:#63736e}
+    .price{font-size:22px;font-weight:bold;margin:13px 0 8px}
+    .unit{font-size:12px;color:#63736e}
+    .status{font-size:11px;color:#a66c20;margin-top:10px}
+    .notice{background:#fff8e8;border:1px solid #f0dfb8;padding:13px;border-radius:12px;font-size:12px;line-height:2;margin-top:18px}
+    .footer{padding:25px 16px;text-align:center;color:#778780;font-size:12px}
+    @media(min-width:650px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">🇦🇫 نرخ‌یار افغانستان</div>
+    <div class="sub">NERKHYAR AFGHANISTAN | اطلاعات بازار افغانستان</div>
+  </div>
+</header>
+
+<main class="wrap hero">
+  <h2>نرخ‌ها و قیمت‌های بازار افغانستان</h2>
+  <div class="muted">نرخ ارز، طلا و مواد غذایی را از بازارهای مختلف مقایسه کنید.</div>
+
+  <div class="tools">
+    <select id="city">
+      <option>تمام افغانستان</option>
+      <option>کابل</option>
+      <option>مزار شریف</option>
+      <option>هرات</option>
+      <option>قندهار</option>
+      <option>جلال‌آباد</option>
+      <option>کندز</option>
+      <option>بلخ</option>
+    </select>
+    <select id="category">
+      <option value="all">تمام قیمت‌ها</option>
+      <option value="currency">ارزها</option>
+      <option value="gold">طلا و نقره</option>
+      <option value="food">مواد غذایی</option>
+      <option value="fuel">مواد سوخت</option>
+    </select>
+  </div>
+
+  <h3 class="section-title">قیمت‌های بازار</h3>
+  <div id="rates" class="cards">
+    <div class="card">
+      <div class="name">دالر آمریکا</div>
+      <div class="price">در انتظار اطلاعات</div>
+      <div class="unit">افغانی / ۱ دالر</div>
+      <div class="status">هنوز نرخ تأییدشده ثبت نشده است</div>
+    </div>
+    <div class="card">
+      <div class="name">یورو</div>
+      <div class="price">در انتظار اطلاعات</div>
+      <div class="unit">افغانی / ۱ یورو</div>
+      <div class="status">هنوز نرخ تأییدشده ثبت نشده است</div>
+    </div>
+  </div>
+
+  <div class="notice">
+    <strong>توجه:</strong>
+    این نسخه اولیه است. تا زمان اتصال منابع معتبر و دیتابیس، هیچ نرخ نمونه‌ای به‌عنوان نرخ واقعی بازار نمایش داده نمی‌شود.
+  </div>
+</main>
+
+<footer class="footer">
+  نرخ‌یار افغانستان © 2026
+  <br>اطلاعات قیمت باید همراه با منبع و زمان ثبت منتشر شود.
+</footer>
+
+<script>
+  document.getElementById("city").addEventListener("change", function(){
+    console.log("شهر انتخاب‌شده:", this.value);
+  });
+  document.getElementById("category").addEventListener("change", function(){
+    console.log("دسته‌بندی:", this.value);
+  });
+</script>
+</body>
+</html>
